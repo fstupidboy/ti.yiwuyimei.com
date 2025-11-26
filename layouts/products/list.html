@@ -1,0 +1,62 @@
+{{ define "main" }}
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">{{ .Title }}</h1>
+        <p class="page-description">{{ .Description }}</p>
+    </div>
+</section>
+
+<section class="products" id="all-products">
+    <div class="container">
+        <div class="categories-grid">
+            {{ range .Site.Params.categories }}
+            <a href="{{ .link }}" class="category-card animate-on-scroll">
+                <div class="category-icon">
+                    <i data-lucide="{{ .icon }}"></i>
+                </div>
+                <h3 class="category-name">{{ .name }}</h3>
+                <p class="category-description">{{ .description }}</p>
+                <span class="category-link">
+                    Browse Products
+                    <i data-lucide="arrow-right"></i>
+                </span>
+            </a>
+            {{ end }}
+        </div>
+        
+        <div class="section-header animate-on-scroll" style="margin-top: 4rem;">
+            <h2 class="section-title">All Products</h2>
+            <p class="section-subtitle">Browse our complete catalog</p>
+        </div>
+        
+        <div class="products-grid">
+            {{ range .Site.Params.products }}
+            <div class="product-card animate-on-scroll">
+                <div class="product-image">
+                    <div class="product-image-placeholder">
+                        <i data-lucide="image"></i>
+                    </div>
+                    <span class="product-category-badge">{{ .category }}</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">{{ .name }}</h3>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <i data-lucide="tag"></i>
+                            <span>{{ .price }}</span>
+                        </div>
+                        <div class="product-moq">
+                            <i data-lucide="package"></i>
+                            <span>MOQ: {{ .moq }}</span>
+                        </div>
+                    </div>
+                    <a href="/#contact" class="btn btn-outline btn-sm product-cta">
+                        Request Quote
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

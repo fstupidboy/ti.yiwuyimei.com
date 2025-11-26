@@ -1,0 +1,27 @@
+<!-- Product Categories Section Component -->
+<section class="categories" id="categories">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">Product Categories</h2>
+            <p class="section-subtitle">Explore our diverse range of wholesale products</p>
+        </div>
+        
+        <!-- Categories Grid -->
+        <div class="categories-grid">
+            {{ range .Site.Params.categories }}
+            <a href="{{ .link }}" class="category-card animate-on-scroll">
+                <div class="category-icon">
+                    <i data-lucide="{{ .icon }}"></i>
+                </div>
+                <h3 class="category-name">{{ .name }}</h3>
+                <p class="category-description">{{ .description }}</p>
+                <span class="category-link">
+                    Browse Products
+                    <i data-lucide="arrow-right"></i>
+                </span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
