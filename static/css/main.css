@@ -1174,8 +1174,9 @@ p {
    ===================================================== */
 .form-success {
     padding: var(--spacing-lg);
-    background-color: var(--color-success);
-    color: var(--color-bg);
+    background-color: #D1FAE5;
+    color: #065F46;
+    border: 1px solid #10B981;
     border-radius: var(--radius-md);
     text-align: center;
     display: none;

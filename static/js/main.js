@@ -266,7 +266,7 @@
         if (!successMessage) {
             successMessage = document.createElement('div');
             successMessage.className = 'form-success';
-            successMessage.innerHTML = '<h3>Thank you!</h3><p>Your message has been sent successfully. We\'ll get back to you within 24 hours.</p>';
+            successMessage.innerHTML = "<h3>Thank you!</h3><p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>";
             contactForm.appendChild(successMessage);
         }
 
