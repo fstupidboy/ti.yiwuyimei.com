@@ -1,0 +1,51 @@
+<!-- Featured Products Section Component -->
+<section class="products" id="products">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Our most popular wholesale items with competitive MOQ</p>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="products-grid">
+            {{ range .Site.Params.products }}
+            <div class="product-card animate-on-scroll">
+                <!-- Product Image -->
+                <div class="product-image">
+                    <div class="product-image-placeholder">
+                        <i data-lucide="image"></i>
+                    </div>
+                    <span class="product-category-badge">{{ .category }}</span>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h3 class="product-name">{{ .name }}</h3>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <i data-lucide="tag"></i>
+                            <span>{{ .price }}</span>
+                        </div>
+                        <div class="product-moq">
+                            <i data-lucide="package"></i>
+                            <span>MOQ: {{ .moq }}</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-sm product-cta">
+                        Request Quote
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        
+        <!-- View All Products CTA -->
+        <div class="products-cta animate-on-scroll">
+            <a href="/products/" class="btn btn-primary btn-lg">
+                View All Products
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>

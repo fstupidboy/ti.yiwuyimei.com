@@ -1,0 +1,216 @@
+# Hugo Configuration for YiwuYimei B2B Website
+# Domain: ti.yiwuyimei.com
+
+baseURL = "https://ti.yiwuyimei.com/"
+languageCode = "en-us"
+title = "YiwuYimei - Premium B2B Products"
+
+# Enable Git info for content dates
+enableGitInfo = false
+
+# Disable taxonomies we don't need
+disableKinds = ["taxonomy", "term"]
+
+# Site parameters
+[params]
+  description = "Your Trusted B2B Partner for Quality Products"
+  tagline = "Premium Quality, Global Reach"
+  phone = "+86 123 4567 8900"
+  email = "sales@yiwuyimei.com"
+  address = "Yiwu International Trade City, Zhejiang, China"
+
+# Hero section configuration
+[params.hero]
+  title = "Premium Products for Global Markets"
+  subtitle = "Your trusted B2B partner delivering quality and reliability since 2010"
+  ctaPrimary = "View Products"
+  ctaSecondary = "Contact Us"
+
+# About section configuration
+[params.about]
+  title = "Why Choose Us"
+  description = "With over 10 years of export experience, we connect manufacturers with buyers worldwide."
+
+# Statistics data
+[[params.stats]]
+  number = "10+"
+  label = "Years Experience"
+
+[[params.stats]]
+  number = "50+"
+  label = "Countries Served"
+
+[[params.stats]]
+  number = "1000+"
+  label = "Products Available"
+
+[[params.stats]]
+  number = "500+"
+  label = "Happy Clients"
+
+# Product categories
+[[params.categories]]
+  name = "Electronics"
+  description = "Consumer electronics and accessories"
+  icon = "cpu"
+  link = "/products/electronics/"
+
+[[params.categories]]
+  name = "Home & Garden"
+  description = "Quality home products"
+  icon = "home"
+  link = "/products/home-garden/"
+
+[[params.categories]]
+  name = "Fashion"
+  description = "Apparel and accessories"
+  icon = "shopping-bag"
+  link = "/products/fashion/"
+
+[[params.categories]]
+  name = "Sports & Outdoors"
+  description = "Outdoor and fitness equipment"
+  icon = "activity"
+  link = "/products/sports/"
+
+# Featured products for homepage
+[[params.products]]
+  name = "Wireless Bluetooth Earbuds"
+  category = "Electronics"
+  moq = "100 pcs"
+  price = "$5.99 - $8.99"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "Smart Watch Pro"
+  category = "Electronics"
+  moq = "50 pcs"
+  price = "$15.99 - $25.99"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "LED Desk Lamp"
+  category = "Home & Garden"
+  moq = "200 pcs"
+  price = "$3.99 - $6.99"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "Cotton Tote Bag"
+  category = "Fashion"
+  moq = "500 pcs"
+  price = "$0.99 - $2.49"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "Yoga Mat Premium"
+  category = "Sports & Outdoors"
+  moq = "100 pcs"
+  price = "$4.99 - $8.99"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "Stainless Steel Water Bottle"
+  category = "Sports & Outdoors"
+  moq = "200 pcs"
+  price = "$2.99 - $5.99"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "Ceramic Plant Pot Set"
+  category = "Home & Garden"
+  moq = "300 pcs"
+  price = "$1.99 - $4.99"
+  image = "/images/products/placeholder.svg"
+
+[[params.products]]
+  name = "Sunglasses UV Protection"
+  category = "Fashion"
+  moq = "200 pcs"
+  price = "$1.49 - $3.99"
+  image = "/images/products/placeholder.svg"
+
+# Main menu
+[menu]
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Products"
+  url = "/products/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 4
+
+# Footer quick links
+[[menu.footer]]
+  name = "About Us"
+  url = "/about/"
+  weight = 1
+
+[[menu.footer]]
+  name = "Our Team"
+  url = "/about/#team"
+  weight = 2
+
+[[menu.footer]]
+  name = "Careers"
+  url = "/careers/"
+  weight = 3
+
+[[menu.footer]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
+
+# Footer product links
+[[menu.products]]
+  name = "Electronics"
+  url = "/products/electronics/"
+  weight = 1
+
+[[menu.products]]
+  name = "Home & Garden"
+  url = "/products/home-garden/"
+  weight = 2
+
+[[menu.products]]
+  name = "Fashion"
+  url = "/products/fashion/"
+  weight = 3
+
+[[menu.products]]
+  name = "Sports"
+  url = "/products/sports/"
+  weight = 4
+
+# Footer support links
+[[menu.support]]
+  name = "FAQ"
+  url = "/faq/"
+  weight = 1
+
+[[menu.support]]
+  name = "Shipping"
+  url = "/shipping/"
+  weight = 2
+
+[[menu.support]]
+  name = "Returns"
+  url = "/returns/"
+  weight = 3
+
+[[menu.support]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 4

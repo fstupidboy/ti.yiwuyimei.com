@@ -1,0 +1,51 @@
+<!-- About Section Component -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <!-- About Content -->
+            <div class="about-content animate-on-scroll">
+                <h2 class="section-title">{{ .Site.Params.about.title }}</h2>
+                <p class="about-description">{{ .Site.Params.about.description }}</p>
+                
+                <!-- Advantages List -->
+                <ul class="advantages-list">
+                    <li class="advantage-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Competitive wholesale pricing</span>
+                    </li>
+                    <li class="advantage-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Quality control inspection</span>
+                    </li>
+                    <li class="advantage-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Flexible payment terms</span>
+                    </li>
+                    <li class="advantage-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Fast and reliable shipping</span>
+                    </li>
+                    <li class="advantage-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Dedicated account manager</span>
+                    </li>
+                </ul>
+                
+                <a href="/about/" class="btn btn-primary">
+                    Learn More About Us
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Stats Grid -->
+            <div class="stats-grid animate-on-scroll">
+                {{ range .Site.Params.stats }}
+                <div class="stat-card">
+                    <span class="stat-number">{{ .number }}</span>
+                    <span class="stat-label">{{ .label }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
